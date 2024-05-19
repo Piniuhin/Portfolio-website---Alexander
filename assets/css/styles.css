@@ -24,10 +24,12 @@
   --hue: 210; /* 210 */
   --first-color: hsl(var(--hue), 100%, 70%); /* hsl(var(--hue), 100%, 70%) */
   --first-color-alt: hsl(var(--hue), 56%, 35%);
+  --first-color-second: hsl(228, 15%, 15%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(228, 8%, 65%);
   --body-color: hsl(228, 15%, 20%);
   --container-color: hsl(228, 15%, 15%);
+  --input-color: hsl(228, 15%, 15%);
   --main-color: #00abf0;
   --bg-color: #081b29;
 
@@ -65,6 +67,40 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  /* HSL color mode */
+  --first-color-second: hsl(
+    210,
+    100%,
+    90%
+  ); /* hsl(var(--hue-color), 30%, 8%) */
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(210, 100%, 90%); /* hsl(var(--hue-color), 29%, 16%) */
+  --body-color: hsl(var(--hue-color), 28%, 12%); /*  */
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+/*========== Button Dark/Light ==========*/
+/* .nav__btns {
+  display: flex;
+  align-items: center;
+} */
+
+.change-theme {
+  font-size: 20px;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--first-color);
 }
 
 /*=============== BASE ===============*/
@@ -534,7 +570,7 @@ blur(24px): Это функция размытия. В данном случае
 .contact__input {
   padding: 16px 20px;
   border-radius: 8px;
-  background-color: var(--container-color);
+  background-color: var(--input-color); /* var(--container-color) */
   color: var(--title-color);
 }
 
@@ -564,7 +600,7 @@ blur(24px): Это функция размытия. В данном случае
 /*=============== FOOTER ===============*/
 
 .footer {
-  background-color: var(--container-color);
+  background-color: var(--first-color-second);
   padding-block: 56px 32px;
 }
 
