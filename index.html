@@ -23,14 +23,7 @@
     <!--=============== pagePiling ===============-->
     <link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css"> -->
-    
-    <!--=============== reCAPTCHA ===============-->
-    
-    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-      <!-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfJhtwpAAAAAKeB3C3AjHiTmdqM8Yt6A08A4d_b"></script> -->
-      <!-- Your code -->
-    
-
+       
     <title>Portfolio_website-Alexander</title>
   </head>
   <body>
@@ -353,10 +346,7 @@
             ></textarea>
 
             <p class="contact__message" id="contact-message"></p>
-            <button type="submit" class="button contact__button g-recaptcha" 
-            data-sitekey="6LfJhtwpAAAAAKeB3C3AjHiTmdqM8Yt6A08A4d_b" 
-            data-callback='onSubmit' 
-            data-action='submit'>Send Message</button>
+            <button type="submit" class="button contact__button">Send Message</button>
           </form>
 
 
@@ -420,40 +410,5 @@
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
 
-    <!--=============== reCAPTCHA ===============-->
-
-    <!-- <script>
-      function onSubmit(token) {
-        document.getElementById("Portfolio website - Alexander").submit();
-      }
-    </script> -->
-
-    <!-- <script>
-      function onClick(e) {
-        e.preventDefault();
-        grecaptcha.enterprise.ready(async () => {
-          const token = await grecaptcha.enterprise.execute('6LfJhtwpAAAAAKeB3C3AjHiTmdqM8Yt6A08A4d_b', {action: 'LOGIN'});
-        });
-      }
-    </script> -->
-
-    <!-- <script>
-      function onSubmit(token) {
-        document.getElementById("contact-form").submit();
-      }
-    
-      document.addEventListener('DOMContentLoaded', function() {
-        const form = document.getElementById('contact-form');
-        form.addEventListener('submit', function(e) {
-          e.preventDefault(); // Предотвращаем стандартное поведение формы
-          grecaptcha.enterprise.ready(function() {
-            grecaptcha.enterprise.execute('6LfJhtwpAAAAAKeB3C3AjHiTmdqM8Yt6A08A4d_b', {action: 'submit'}).then(function(token) {
-              document.getElementById('contact-form').submit();
-            });
-          });
-        });
-      });
-    </script> -->
-    
   </body>
 </html>

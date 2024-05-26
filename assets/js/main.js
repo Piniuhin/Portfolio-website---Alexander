@@ -176,15 +176,3 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
-
-/*=============== reCAPTCHA ===============*/
-
-// function onClick(e) {
-//   e.preventDefault();
-//   grecaptcha.enterprise.ready(async () => {
-//     const token = await grecaptcha.enterprise.execute(
-//       "6LfJhtwpAAAAAKeB3C3AjHiTmdqM8Yt6A08A4d_b",
-//       { action: "LOGIN" }
-//     );
-//   });
-// }
